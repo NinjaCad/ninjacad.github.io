@@ -19,6 +19,7 @@ html {
   background: var(--bg);
 }
 html, body {
+  height: 100%;
   margin: 0;
   background: var(--bg);
   overflow-x: hidden;
