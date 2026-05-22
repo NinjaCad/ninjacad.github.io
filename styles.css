@@ -99,6 +99,23 @@ nav {
 nav a {
   color: var(--muted);
   font-weight: 600;
+  text-decoration: none;
+  transition:
+    color 180ms ease,
+    text-shadow 180ms ease,
+    transform 120ms ease,
+    text-decoration-color 180ms ease;
+  text-underline-offset: 0.22em;
+}
+nav a:hover {
+  color: #e9f8ff;
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-shadow: 0 0 10px rgba(0, 210, 255, 0.55);
+}
+nav a:active {
+  transform: translateY(1px) scale(0.97);
+  text-shadow: 0 0 14px rgba(0, 210, 255, 0.8);
 }
 
 .cta {
@@ -107,6 +124,9 @@ nav a {
   border-radius: 10px;
   color: #04263a;
   font-weight: 700;
+}
+.cta:hover {
+  color: #04263a;
 }
 
 .hero {
@@ -119,6 +139,7 @@ nav a {
 .hero-left h1 {
   font-size: clamp(30px,5vw,44px);
   margin: 0 0 10px;
+  line-height: 1.05;
 }
 .hero-left p {
   color: var(--muted);
@@ -130,9 +151,29 @@ nav a {
   gap: 12px;
 }
 .button {
+  display: inline-flex;
+  align-items: center;
   padding: 11px 14px;
   border-radius: 10px;
   font-weight: 700;
+  text-decoration: none;
+  transition:
+    color 180ms ease,
+    box-shadow 180ms ease,
+    transform 120ms ease,
+    text-decoration-color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease;
+  text-underline-offset: 0.22em;
+}
+.button:hover {
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  box-shadow: 0 0 14px rgba(255, 255, 255, 0.5);
+}
+.button:active {
+  transform: translateY(1px) scale(0.97);
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.75);
 }
 .button.primary {
   background: var(--accent);
@@ -141,6 +182,13 @@ nav a {
 .button.ghost {
   border: 1px solid rgba(255,255,255,0.06);
   color: var(--muted);
+}
+.button.primary:hover {
+  color: #052025;
+}
+.button.ghost:hover {
+  color: #e9f8ff;
+  border-color: rgba(255, 255, 255, 0.45);
 }
 
 .me-card {
@@ -349,6 +397,9 @@ textarea { min-height: 120px; }
 }
 @media (max-width: 640px) {
   body { padding: 18px; }
+  .hero { grid-template-columns: 1fr; }
+  .hero-left h1 span { display: block; }
+  .hero-left h1 { font-size: clamp(22px, 6vw, 32px); }
   .projects-grid { grid-template-columns: 1fr;}
   header {
     flex-direction: column;
