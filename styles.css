@@ -226,10 +226,13 @@ section.projects { margin-bottom: 36px; }
   flex-wrap: wrap;
 }
 .tag {
-  font-size: 12px;
-  background: rgba(255,255,255,0.03);
-  padding: 6px 8px;
-  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 13px;
+  background: var(--glass);
+  padding: 8px 10px;
+  border-radius: 999px;
+  font-weight: 600;
   color: var(--muted);
 }
 .project-link-hint {
