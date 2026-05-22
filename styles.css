@@ -55,7 +55,7 @@ body::before {
 body {
   overscroll-behavior: none;
   font-family: "Inter", sans-serif;
-  position: relative
+  position: relative;
   width: 100%;
   background: transparent;
   color: #e6eef6;
