@@ -28,7 +28,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  z-index: -1;
+  z-index: 0;
 
   background:
     radial-gradient(circle at 20% 25%, rgba(15, 35, 70, 0.30), transparent 60%),
@@ -82,6 +82,8 @@ a {
 }
 
 .wrap {
+  position: relative;
+  z-index: 1;
   width: 100%;
   max-width: var(--max);
 }
