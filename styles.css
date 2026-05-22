@@ -20,6 +20,7 @@ html {
 }
 html, body {
   height: 100%;
+  width: 100%;
   margin: 0;
   background: var(--bg);
   overflow-x: hidden;
@@ -46,10 +47,6 @@ body::before {
 body {
   overscroll-behavior: none;
   font-family: "Inter", sans-serif;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  margin: 0;
   background: transparent;
   color: #e6eef6;
   -webkit-font-smoothing: antialiased;
