@@ -19,7 +19,6 @@ html {
   background: var(--bg);
 }
 html, body {
-  height: 100%;
   width: 100%;
   margin: 0;
   background: var(--bg);
@@ -27,7 +26,6 @@ html, body {
 }
 body::before {
   content: "";
-  position: fixed;
   inset: 0;
   z-index: -1;
 
