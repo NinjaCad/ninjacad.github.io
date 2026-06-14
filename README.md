@@ -56,7 +56,7 @@ portfolio/
 - Advanced Cybersecurity
 
 ## 📬 Contact
-- Email: mail@caedmonjulian.com
+- Email: contact@caedmonjulian.com
 - LinkedIn: https://linkedin.com/in/caedmonjulian  
 - Github: https://github.com/NinjaCad
 
